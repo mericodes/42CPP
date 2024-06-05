@@ -1,43 +1,57 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 18:24:57 by codespace         #+#    #+#             */
-/*   Updated: 2024/05/29 20:19:40 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/05 21:40:26 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 /*	DEFAULT CONSTRUCTOR	*/
-Animal::Animal()
+Animal::Animal() : _type("Animal")
 {
 	std::cout << "Animal constructor called" << std::endl;
 }
-Animal::Animal(std::string name)
-{}
+
+Animal::Animal(std::string const &type) : _type(type)
+{
+	std::cout << "Animal name constructor called" << std::endl;
+}
 
 /*	COPY CONSTRUCTOR	*/
 Animal::Animal(const Animal &copy)
-{}
+{
+	std::cout << "Animal copy constructor called" << std::endl;
+	*this = copy;
+}
 		
 /*	COPY ASSIGNMENT OPERATOR OVERLOAD	*/
 Animal& Animal::operator=(const Animal &other)
 {
-
+	std::cout << "Animal copy assignment operator called" << std::endl;
+	if (this != &other)
+	{
+		_type = other.getType();
+	}
+	return (*this);
 }
 		
 /*	GETTERS AND SETTERS	*/
-std::string Animal::getType()
+std::string Animal::getType(void) const
 {
 	return (_type);
 }
 		
 /*	MEMBER FUNCTIONS	*/
-
+void Animal::makeSound() const
+{
+	std::cout << "    *    UNKNOWN SOUND...    *    " << std::endl;
+}
 /*	DESTRUCTOR	*/
 Animal::~Animal()
 {

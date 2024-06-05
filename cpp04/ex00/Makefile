@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
+#    By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/16 17:06:16 by mlopez-i          #+#    #+#              #
-#    Updated: 2024/05/28 18:24:41 by codespace        ###   ########.fr        #
+#    Updated: 2024/06/05 21:25:17 by mlopez-i         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ex00
 
-SRC_FILES = Animal.cpp main.cpp
+SRC_FILES = Animal.cpp Cat.cpp Dog.cpp main.cpp
 
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.cpp=.o)

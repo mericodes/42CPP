@@ -24,7 +24,7 @@ class Animal
 	public:
 		/*	DEFAULT CONSTRUCTOR	*/
 		Animal();
-		Animal(std::string name);
+		Animal(std::string const &type);
 
 		/*	COPY CONSTRUCTOR	*/
 		Animal(const Animal &copy);
@@ -33,10 +33,11 @@ class Animal
 		Animal& operator=(const Animal &other);
 		
 		/*	GETTERS AND SETTERS	*/
-		std::string getType();
-		
-		/*	MEMBER FUNCTIONS	*/
+		std::string getType(void) const;
+		std::string getSound(void) const;
 
+		/*	MEMBER FUNCTIONS	*/
+		virtual void makeSound() const;
 		/*	DESTRUCTOR	*/
 		~Animal();	
 };
