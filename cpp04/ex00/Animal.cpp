@@ -14,7 +14,9 @@
 
 /*	DEFAULT CONSTRUCTOR	*/
 Animal::Animal()
-{}
+{
+	std::cout << "Animal constructor called" << std::endl;
+}
 Animal::Animal(std::string name)
 {}
 
