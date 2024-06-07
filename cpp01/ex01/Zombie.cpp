@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:47:47 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/05/29 19:14:27 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:41:38 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,17 @@ void	Zombie::announce(void)
 	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void	Zombie::setName(std::string name)
+const std::string &Zombie::getName() const
 {
-	_name = name;
+	return (_name);
+}
+
+void	Zombie::setName(const std::string &name)
+{
+	if (!name.empty())
+		_name = name;
+	else
+		_name = "No name";
 }
 
 Zombie::~Zombie()

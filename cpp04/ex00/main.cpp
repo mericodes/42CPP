@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 18:24:50 by codespace         #+#    #+#             */
-/*   Updated: 2024/06/05 21:31:48 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:45:30 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,8 @@ int main(void)
 	j->makeSound();
 	meta->makeSound();
 
+	delete i;
+	delete j;
+	delete meta;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:46:54 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/05/16 19:51:44 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:39:17 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ class Zombie
 		Zombie();
 
 		void	announce();
-		void	setName(std::string name);
+		void	setName(const std::string &name);
+		const std::string &getName() const;
 	
 		~Zombie();
 };

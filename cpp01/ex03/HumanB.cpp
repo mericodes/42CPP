@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 18:26:30 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/05/29 19:20:01 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:51:39 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 HumanB::HumanB(std::string name)
 {
-	_name = name;
+	if (!name.empty())
+		_name = name;
+	else
+		_name = "No name";
 	_weapon = NULL;
 }
 void	HumanB::attack()

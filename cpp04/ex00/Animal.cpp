@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 18:24:57 by codespace         #+#    #+#             */
-/*   Updated: 2024/06/05 21:40:26 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:47:14 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ Animal& Animal::operator=(const Animal &other)
 }
 		
 /*	GETTERS AND SETTERS	*/
-std::string Animal::getType(void) const
+const std::string &Animal::getType(void) const
 {
 	return (_type);
 }

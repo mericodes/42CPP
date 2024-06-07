@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:12:58 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/05/29 19:14:18 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 19:21:35 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,11 @@ Zombie::Zombie()
 
 Zombie::Zombie(std::string name)
 {
-	_name = name;
+	if (!name.empty())
+		_name = name;
+	else
+		_name = "No name";
+	std::cout << "A zombie with name " << _name << " has been created" << std::endl;
 }
 
 void	Zombie::announce(void)

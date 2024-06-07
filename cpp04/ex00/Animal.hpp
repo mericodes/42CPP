@@ -33,13 +33,13 @@ class Animal
 		Animal& operator=(const Animal &other);
 		
 		/*	GETTERS AND SETTERS	*/
-		std::string getType(void) const;
-		std::string getSound(void) const;
+		const std::string &getType(void) const;
 
 		/*	MEMBER FUNCTIONS	*/
 		virtual void makeSound() const;
+
 		/*	DESTRUCTOR	*/
-		~Animal();	
+		virtual ~Animal();	
 };
 
 #endif
