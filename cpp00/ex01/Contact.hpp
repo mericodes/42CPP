@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 17:09:40 by codespace         #+#    #+#             */
-/*   Updated: 2024/05/29 17:39:48 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 16:32:42 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <stdlib.h>
 
 class Contact
 {

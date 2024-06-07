@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 17:08:14 by codespace         #+#    #+#             */
-/*   Updated: 2024/05/29 17:43:56 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 17:39:11 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main()
 	PhoneBook phoneBook;
 	Contact contact;
 
-	
+	phoneBook.setIndex(0);
 	// std::cout << "Write ADD, SEARCH or EXIT." << std::endl;
 	while (true)
 	{
@@ -30,7 +30,7 @@ int	main()
 			exit(0);
 		}
 		if (input == "EXIT")
-			exit(0);
+			exit (0);
 		else if (input == "ADD")
 			phoneBook.AddContact(&contact);
 		else if (input == "SEARCH")

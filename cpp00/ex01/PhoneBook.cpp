@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 17:09:16 by codespace         #+#    #+#             */
-/*   Updated: 2024/05/29 17:45:41 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/07 17:43:52 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 PhoneBook::PhoneBook()
 {
 
+}
+
+void	PhoneBook::setIndex(int value)
+{
+	index = value;
 }
 
 void	PhoneBook::AddContact(Contact *contact)
@@ -68,7 +73,7 @@ void	PhoneBook::SearchContact(PhoneBook *phoneBook)
 		std::cout << "Invalid index." << std::endl;
 		return ;
 	}
-	index = std::stoi(input);
+	index = atoi(input.c_str());
 	if (index < 0 || index > 7)
 	{
 		std::cout << "Invalid index range. Try a number between 0 and 7" << std::endl;
