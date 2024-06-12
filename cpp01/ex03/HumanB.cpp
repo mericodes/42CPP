@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 18:26:30 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/06/07 19:51:39 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:10:20 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 HumanB::HumanB(std::string name)
 {
+	std::cout << "HumanB constructor called." << std::endl;
 	if (!name.empty())
 		_name = name;
 	else
@@ -29,10 +30,10 @@ void	HumanB::attack()
 }
 void	HumanB::setWeapon(Weapon &weapon)
 {
-	this->_weapon = &weapon;
+	_weapon = &weapon;
 }
 
 HumanB::~HumanB()
 {
-	
+	std::cout << "HumanB destructor called." << std::endl;
 }

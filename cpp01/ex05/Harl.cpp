@@ -6,7 +6,7 @@
 /*   By: mlopez-i <mlopez-i@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:40:33 by mlopez-i          #+#    #+#             */
-/*   Updated: 2024/05/29 19:27:41 by mlopez-i         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:39:46 by mlopez-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Harl::Harl()
 {
-	
+	std::cout << "Harl constructor called." << std::endl;
 }
 
 void	Harl::debug(void)
@@ -64,5 +64,5 @@ void	Harl::complain(std::string level)
 
 Harl::~Harl()
 {
-	
+	std::cout << "Harl destructor called." << std::endl;
 }
